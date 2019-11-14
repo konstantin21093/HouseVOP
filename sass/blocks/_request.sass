@@ -1,0 +1,71 @@
+.request
+  background: url(../img/request/Rectangle.png) no-repeat
+  background-size: cover
+  &__title
+    padding-top: 180px
+    padding-bottom: 50px
+  &-wrap
+    padding-bottom: 180px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-item
+    width: 46%
+  &__description
+    margin: 0
+    text-align: left
+    font-size: 16px
+    color: #ffffff
+    line-height: 24px
+    +raleway
+.form
+  &__row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:first-child
+      padding-bottom: 35px
+  &__input
+    text-align: center
+    padding: 10px 35px
+    background-color: rgba(255, 255, 255, 0.2)
+    border: none
+    color: #bebebe
+    font-size: 14px
+  &__button
+    text-align: center
+    padding: 9px 52.5px
+    background-color: $gold
+    font-size: 16px
+    font-weight: bold
+    border: none
+    color: #fff
+  &__text
+    text-align: center
+    font-size: 13px
+    color: #E7E7E7
+.wrap-text
+  text-align: center
+  padding-left: 10px
+@media ( max-width: 1199px )
+  .request
+    &-wrap
+      flex-direction: column
+    &-item
+      width: 100%
+    &__description
+      text-align: center
+      padding-bottom: 30px
+@media ( max-width: 530px )
+  .request
+    &__title
+      padding-top: 50px
+    &-wrap
+      padding-bottom: 50px
+  .form
+    &__row
+      flex-direction: column
+      &:first-child
+        padding-bottom: 0
+    &__group
+      padding-bottom: 10px

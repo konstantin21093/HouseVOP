@@ -36,6 +36,28 @@
   font-style: normal;
 }
 
+.section-title {
+  margin: 0;
+  font-size: 36px;
+  color: #D4C17F;
+  font-weight: bold;
+}
+
+input::-webkit-input-placeholder {
+  color: #BEBEBE;
+}
+
+input::-moz-placeholder {
+  color: #fff;
+}
+
+@media (max-width: 620px) {
+  .section-title {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -415,13 +437,6 @@
   }
 }
 
-@media (max-width: 620px) {
-  .apartments__title {
-    text-align: center;
-    padding-top: 40px;
-  }
-}
-
 @media (max-width: 465px) {
   .apartments-item__text {
     top: 150px;
@@ -433,6 +448,125 @@
   .apartments-item__text {
     top: 100px;
     left: 50;
+  }
+}
+
+.request {
+  background: url(../img/request/Rectangle.png) no-repeat;
+  background-size: cover;
+}
+
+.request__title {
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+
+.request-wrap {
+  padding-bottom: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.request-item {
+  width: 46%;
+}
+
+.request__description {
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 24px;
+  font-family: 'Raleway Regular', sans-serif;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__row:first-child {
+  padding-bottom: 35px;
+}
+
+.form__input {
+  text-align: center;
+  padding: 10px 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #bebebe;
+  font-size: 14px;
+}
+
+.form__button {
+  text-align: center;
+  padding: 9px 52.5px;
+  background-color: #D4C17F;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+}
+
+.form__text {
+  text-align: center;
+  font-size: 13px;
+  color: #E7E7E7;
+}
+
+.wrap-text {
+  text-align: center;
+  padding-left: 10px;
+}
+
+@media (max-width: 1199px) {
+  .request-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .request-item {
+    width: 100%;
+  }
+  .request__description {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .request__title {
+    padding-top: 50px;
+  }
+  .request-wrap {
+    padding-bottom: 50px;
+  }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__row:first-child {
+    padding-bottom: 0;
+  }
+  .form__group {
+    padding-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
