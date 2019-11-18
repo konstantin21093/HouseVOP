@@ -1,0 +1,35 @@
+.questions
+  background: $dark
+  &__title
+    padding-top: 180px
+    padding-bottom: 50px
+  &-form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 180px
+@media ( max-width: 1199px )
+  .questions
+    &-form
+      flex-wrap: wrap
+      justify-content: space-around
+      &__item
+        width: 35%
+@media ( max-width: 740px )
+  .questions
+    &-form
+      flex-direction: column
+      &__item
+        margin-bottom: 10px
+        width: 50%
+@media ( max-width: 515px )
+  .questions
+    &__title
+      padding-top: 50px
+      padding-bottom: 50px
+    &-form
+      flex-direction: column
+      padding-bottom: 40px
+      &__item
+        margin-bottom: 10px
+        width: 90%
