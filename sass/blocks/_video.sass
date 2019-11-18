@@ -1,0 +1,39 @@
+.video
+  position: relative
+  background-color: $dark
+  &__number
+    position: absolute
+    color: #fff
+    font-size: 400px
+    opacity: 0.02
+    top: 90px
+    right: 195px
+  &-wrap
+    display: flex
+    text-align: center
+    justify-content: center
+  &-link
+    position: relative
+    &__play
+      position: absolute
+      top: 250px
+      right: 295px
+@media ( max-width: 780px )
+  .video
+    &-link
+      &__img
+        width: 350px
+      &__play
+        width: 50px
+        top: 145px
+        right: 140px
+@media ( max-width: 400px )
+  .video
+    padding-top: 20px
+    &-link
+      &__img
+        width: 250px
+      &__play
+        width: 35px
+        top: 95px
+        right: 105px
