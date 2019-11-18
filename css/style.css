@@ -628,4 +628,20 @@ input::-moz-placeholder {
     right: 105px;
   }
 }
+
+.map {
+  background: #242B33;
+}
+
+.map__title {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 530px) {
+  .map__title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
