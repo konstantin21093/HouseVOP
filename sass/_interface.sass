@@ -10,6 +10,34 @@ input::-webkit-input-placeholder
   color: #BEBEBE
 input::-moz-placeholder
   color: #fff
+.btn_up
+  display: none
+  position: fixed
+  bottom: 50px
+  right: 50px
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  border: 2px solid $gold
+  background: #333
+  z-index: 100
+  outline: 0!important
+  transition: 1.4s
+  &:after
+    content: ''
+    width: 10px
+    height: 10px
+    border-top: 2px solid $gold
+    border-left: 2px solid $gold
+    transform: rotate(45deg)
+    position: absolute
+    top: 4px
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+  &-active
+    display: block
 @media ( max-width: 620px )
   .section-title
     text-align: center

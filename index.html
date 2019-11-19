@@ -10,7 +10,7 @@
 </head>
 <body>
   
-  <header class="header">
+  <header class="header" id="header">
     <div class="navbar">
       <div class="container">
         <div class="navbar-wrap">
@@ -19,11 +19,11 @@
             <span class="logo__description">Жилой комплекс</span>
           </div>
           <nav class="navbar__menu" id="navbar">
-            <a href="#" class="navbar__link">О комплексе</a>
-            <a href="#" class="navbar__link">Район</a>
-            <a href="#" class="navbar__link">Каталог квартир</a>
-            <a href="#" class="navbar__link">Ипотека</a>
-            <a href="#" class="navbar__link">Контакты</a>
+            <a href="#advantages" class="navbar__link">О комплексе</a>
+            <a href="#map" class="navbar__link">Район</a>
+            <a href="#apartments" class="navbar__link">Каталог квартир</a>
+            <a href="#questions" class="navbar__link">Ипотека</a>
+            <a href="#footer" class="navbar__link">Контакты</a>
           </nav>
           <button class="menu-button navbar__button" id="burger">
             <span class="menu-button__line"></span>
@@ -42,7 +42,7 @@
     </div>
 
   </header>
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <span class="advantages__number">II</span>
     <div class="container">
       <div class="advantages-wrap">
@@ -65,7 +65,7 @@
       </div>
     </div>
   </section>
-  <section class="apartments">
+  <section class="apartments" id="apartments">
     <div class="apartments__number">III</div>
     <div class="container">
       <h2 class="apartments__title section-title">Наши квартиры</h2>
@@ -89,7 +89,7 @@
       </div>
     </div>
   </section>
-  <section class="request">
+  <section class="request" id="request">
     <div class="container">
       <h2 class="request__title section-title">Хотите посмотреть?</h2>
       <div class="request-wrap">
@@ -121,7 +121,7 @@
       </div>
     </div>
   </section>
-  <section class="video">
+  <section class="video" id="video">
     <div class="video__number">IV</div>
     <div class="container">
       <div class="video-wrap">
@@ -132,7 +132,7 @@
       </div>
     </div>
   </section>
-  <section class="map">
+  <section class="map" id="map">
     <div class="map__number">V</div>
     <div class="container">
       <h2 class="map__title section-title">Район на карте</h2>
@@ -141,7 +141,7 @@
       </div>
     </div>
   </section>
-  <section class="questions">
+  <section class="questions" id="questions">
     <div class="container">
       <h2 class="questions__title section-title">Есть вопросы?</h2>
       <form class="form questions-form" action="#">
@@ -152,7 +152,7 @@
       </form>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <div class="footer-wrap">
         <div class="footer-item">
@@ -162,18 +162,18 @@
           </div>  
         </div>
         <div class="footer-item footer-nav">
-          <a href="#" class="navbar__link footer-link">О комплексе</a>
-          <a href="#" class="navbar__link footer-link">Район</a>
-          <a href="#" class="navbar__link footer-link">Каталог квартир</a>
-          <a href="#" class="navbar__link footer-link">Ипотека</a>
-          <a href="#" class="navbar__link footer-link">Контакты</a>  
+          <a href="#advantages" class="navbar__link footer-link">О комплексе</a>
+          <a href="#map" class="navbar__link footer-link">Район</a>
+          <a href="#apartments" class="navbar__link footer-link">Каталог квартир</a>
+          <a href="#questions" class="navbar__link footer-link">Ипотека</a>
+          <a href="#footer" class="navbar__link footer-link">Контакты</a>  
         </div>
         <div class="footer-item footer-nav">
-          <a href="#" class="navbar__link footer-link">О комплексе</a>
-          <a href="#" class="navbar__link footer-link">Район</a>
-          <a href="#" class="navbar__link footer-link">Каталог квартир</a>
-          <a href="#" class="navbar__link footer-link">Ипотека</a>
-          <a href="#" class="navbar__link footer-link">Контакты</a>
+          <a href="#advantages" class="navbar__link footer-link">О комплексе</a>
+          <a href="#map" class="navbar__link footer-link">Район</a>
+          <a href="#apartments" class="navbar__link footer-link">Каталог квартир</a>
+          <a href="#questions" class="navbar__link footer-link">Ипотека</a>
+          <a href="#footer" class="navbar__link footer-link">Контакты</a>
         </div>
         <div class="footer-item footer-description">
           <span class="footer-item__text">Адрес: Наб. реки Фонтанки 10-15</span>
@@ -190,6 +190,8 @@
       </div>
     </div>
   </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/jquery.malihu.PageScroll2id.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

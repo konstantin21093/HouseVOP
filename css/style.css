@@ -56,6 +56,42 @@ input::-moz-placeholder {
   color: #fff;
 }
 
+.btn_up {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #D4C17F;
+  background: #333;
+  z-index: 100;
+  outline: 0 !important;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+}
+
+.btn_up:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #D4C17F;
+  border-left: 2px solid #D4C17F;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.btn_up-active {
+  display: block;
+}
+
 @media (max-width: 620px) {
   .section-title {
     text-align: center;
